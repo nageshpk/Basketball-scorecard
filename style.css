@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Cursed Timer ULiL';
+    src: url(Cursed_Timer_ULiL/CursedTimerULiL.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1B244A;
+    font-family: 'Cursed Timer ULiL';
+}
+
+
+
+.container {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: #EEE;
+    margin-top: 200px;
+}
+
+.score-bcg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 120px;
+    width: 155px;
+    margin: 0 auto;
+    background-color: #080001;
+}
+
+
+span {
+    font-weight: 400;
+    font-size: 90px;
+    text-align: center;
+    color: #F94F6D;
+    line-height: 120px;
+    padding-top: 18px;
+}
+
+.addition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*a {
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    margin: 20px 5px;
+    padding: 10px;
+    background: transparent;
+    font-family: 'Cursed Timer ULiL'; 
+}*/
+
+button {
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    margin: 20px 5px;
+    padding: 8px;
+    background-color: #1B244A;
+    font-family: 'Cursed Timer ULiL';
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:active {
+    transform: scale(0.98);
+}
