@@ -81,3 +81,14 @@ button {
 button:active {
     transform: scale(0.98);
 }
+
+
+.newgame-btn {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #F94F6D;
+    background-color: #080001;
+}

@@ -5,6 +5,7 @@ let homeScore = document.getElementById("home-score")
 let homeScoreBtnOne = document.getElementById("home-score-add-btn-1")
 let homeScoreBtnTwo = document.getElementById("home-score-add-btn-2")
 let homeScoreBtnThree = document.getElementById("home-score-add-btn-3")
+let newGameEl = document.getElementById("newgame-el")
 
 homeScoreBtnOne.addEventListener("click", function(){
     hscore += 1
@@ -44,3 +45,12 @@ guestScoreBtnThree.addEventListener("click", function(){
     gscore += 3
     guestScore.textContent = gscore
 })
+
+
+
+function newGame() {
+    let hscore = 0
+    homeScore.textContent = hscore
+    let gscore = 0
+    guestScore.textContent = gscore
+}
