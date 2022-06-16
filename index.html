@@ -8,6 +8,7 @@
     <title>Basketball Scorecard</title>
 </head>
 <body>
+    <h1 class="board">🏀 SCOREBOARD 🏀</h1>
     <div class="container">
         <div class="one">
             <h1>HOME</h1>
@@ -15,16 +16,13 @@
                 <span id="home-score">0</span>
             </div>
             <div class="addition">
-                <button id="home-score-add-btn-1">+1</button>
-                <button id="home-score-add-btn-2">+2</button>
-                <button id="home-score-add-btn-3">+3</button>
+                <button class="add" id="home-score-add-btn-1">+1</button>
+                <button class="add" id="home-score-add-btn-2">+2</button>
+                <button class="add" id="home-score-add-btn-3">+3</button>
             </div>
         </div>
 
-        <div class="center">
-            <button class="newgame-btn" id="newgame-el" onclick="newGame()">New Game</button>
-        </div>
-
+        <button class="newgame-btn" id="newgame-el" onclick="newGame()">New Game</button>
 
         <div class="one">
             <h1>GUEST</h1>
@@ -32,9 +30,9 @@
                 <span id="guest-score">0</span>
             </div>
             <div class="addition">
-                <button id="guest-score-add-btn-1">+1</button>
-                <button id="guest-score-add-btn-2">+2</button>
-                <button id="guest-score-add-btn-3">+3</button>
+                <button class="add" id="guest-score-add-btn-1">+1</button>
+                <button class="add" id="guest-score-add-btn-2">+2</button>
+                <button class="add" id="guest-score-add-btn-3">+3</button>
             </div>
         </div>
     </div>

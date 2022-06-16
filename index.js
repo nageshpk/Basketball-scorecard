@@ -10,18 +10,35 @@ let newGameEl = document.getElementById("newgame-el")
 homeScoreBtnOne.addEventListener("click", function(){
     hscore += 1
     homeScore.textContent = hscore
+    leader()
 })
 
 homeScoreBtnTwo.addEventListener("click", function(){
     hscore += 2
     homeScore.textContent = hscore
+    leader()
 })
 
 homeScoreBtnThree.addEventListener("click", function(){
     hscore += 3
     homeScore.textContent = hscore
+    leader()
 })
 
+
+
+function leader() {
+    if (hscore > gscore) {
+        homeScore.classList.add('highlight')
+        guestScore.classList.remove('highlight')
+    } else if (hscore < gscore) {
+        homeScore.classList.remove('highlight')
+        guestScore.classList.add('highlight')
+    } else {
+        homeScore.classList.remove('highlight')
+        guestScore.classList.remove('highlight')
+    }
+}
 
 
 let gscore = 0
@@ -34,23 +51,30 @@ let guestScoreBtnThree = document.getElementById("guest-score-add-btn-3")
 guestScoreBtnOne.addEventListener("click", function(){
     gscore += 1
     guestScore.textContent = gscore
+    leader()
 })
 
 guestScoreBtnTwo.addEventListener("click", function(){
     gscore += 2
     guestScore.textContent = gscore
+    leader()
 })
 
 guestScoreBtnThree.addEventListener("click", function(){
     gscore += 3
     guestScore.textContent = gscore
+    leader()
 })
 
 
 
 function newGame() {
-    let hscore = 0
+    hscore = 0
+    gscore = 0
     homeScore.textContent = hscore
-    let gscore = 0
     guestScore.textContent = gscore
+    homeScore.classList.remove('highlight')
+    guestScore.classList.remove('highlight')
 }
+
+
